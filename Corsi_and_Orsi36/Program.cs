@@ -35,18 +35,32 @@ namespace Corsi_and_Orsi36
             gct1;
             gct2;
             //estrazione
-            for(int i=0; i<90;i++)
+            for (int i = 0; i < 90; i++)
             {
                 y = estrai();
                 x = cdx();
                 z = cdz();
-                for (int j=0; j<3;j++)
+                for (int j = 0; j < 3; j++)
                 {
                     Console.SetCursorPosition(x, z);
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(y);
+                    Thread.Sleep(1000);
+                    Console.SetCursorPosition(x, z);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine(y);
+                    Thread.Sleep(1000);
                 }
+                ifct1();
+                ifct2;
+                Thread.Sleep(2000);
             }
+            int estrai();
+            {
+                int a;
+
+            }
+            
             
 
 
