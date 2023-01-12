@@ -32,8 +32,8 @@ namespace Corsi_and_Orsi36
             }
             nc1();
             nc2();
-            gct1;
-            gct2;
+            gct1();
+            gct2();
             //estrazione
             for (int i = 0; i < 90; i++)
             {
@@ -58,9 +58,16 @@ namespace Corsi_and_Orsi36
             int estrai();
             {
                 int a;
+                do
+                {
+                    a = r.Next(1, 91);
+                } while (v[a - 1] == true);
+                v[a - 1] = true;
+                return a;
 
             }
-            
+            int cdx
+            int cdz
             
 
 
