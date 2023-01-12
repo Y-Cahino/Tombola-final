@@ -16,6 +16,7 @@ namespace Corsi_and_Orsi36
             bool[] v = new bool[90];
             int[,] c1 = new int[9, 3];
             int[,] c2 = new int[9, 3];
+            int c1v=0,c2v=0;
             //tabella
             Console.WriteLine("Generazione tabella");
             for(int i=0; i<9;i++)
@@ -29,13 +30,25 @@ namespace Corsi_and_Orsi36
                 }
                 z++;
             }
+            nc1();
+            nc2();
+            gct1;
+            gct2;
             //estrazione
             for(int i=0; i<90;i++)
             {
-                
+                y = estrai();
+                x = cdx();
+                z = cdz();
+                for (int j=0; j<3;j++)
+                {
+                    Console.SetCursorPosition(x, z);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(y);
+                }
             }
             
-                
+
 
         }
     }
