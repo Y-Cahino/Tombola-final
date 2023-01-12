@@ -52,7 +52,7 @@ namespace Corsi_and_Orsi36
                     Thread.Sleep(1000);
                 }
                 ifct1();
-                ifct();
+                ifct2();
                 Thread.Sleep(2000);
             }
             int estrai();
@@ -106,6 +106,7 @@ namespace Corsi_and_Orsi36
             }
             int nc1()
             {
+                //vincente
                 bool[] vinto = new bool[90];
                 int b;
                 for (int j = 0; j < 3; j++)
@@ -121,6 +122,10 @@ namespace Corsi_and_Orsi36
                         c[b / 10] = true;
                     }
                 }
+            }
+            int nc2()
+            {
+
             }
         }
     }
