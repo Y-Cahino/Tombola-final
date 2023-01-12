@@ -66,8 +66,26 @@ namespace Corsi_and_Orsi36
                 return a;
 
             }
-            int cdx
-            int cdz
+            int cdx()
+            {
+                if(y/10==0)
+                {
+                    x = 11 + (y % 10 * 3);
+                }
+                else
+                {
+                    if (y % 10 != 0)
+                    {
+                        x = 11 + (y % 10 * 3 - 1);
+                    }
+                    else
+                    {
+                        x = 11 + y / (y / 10) * 3 - 1;
+                    }
+                    return x;
+                }
+            }
+            int cdz()
             
 
 
