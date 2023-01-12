@@ -86,6 +86,24 @@ namespace Corsi_and_Orsi36
                 }
             }
             int cdz()
+            {
+                if(z%10==0)
+                {
+                    y = 2;
+                }
+                else
+                {
+                    if(z%10!= 0)
+                    {
+                        z = 2 + y / 10;
+                    }
+                    else
+                    {
+                        y = 1 + y / 10;
+                    }
+                }
+                return y;
+            }
             
 
 
