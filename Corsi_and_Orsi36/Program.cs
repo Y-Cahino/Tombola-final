@@ -82,8 +82,8 @@ namespace Corsi_and_Orsi36
                     {
                         x = 11 + y / (y / 10) * 3 - 1;
                     }
-                    return x;
                 }
+                return x;
             }
             int cdz()
             {
@@ -106,7 +106,9 @@ namespace Corsi_and_Orsi36
             }
             int nc1()
             {
-                //vincente
+                //vincente-trova-estrae-controlla
+                //creiamo un array che permetta di controllare i numeri
+                //?
                 bool[] vinto = new bool[90];
                 int b;
                 for (int j = 0; j < 3; j++)
@@ -117,15 +119,48 @@ namespace Corsi_and_Orsi36
                         do
                         {
                             b = r.Next(1, 91);
+                            if(b==90)
+                            {
+                                i--;
+                            }
                         } while (vinto[b - 1] == true || c[b / 10] == true);
                         vinto[b - 1] = true;
                         c[b / 10] = true;
+                        if(b == 90) //spostare nell'altra colonna, 9-1=8
+                        {
+                            c1[8,j]=90;
+                        }
+                        else
+                        {
+                            c1[b / 10, j] = b; //se non è equivalente a 90
+                        }
+                    }
+                    for(int i = 0; i < 9; i++) //creazione indice
+                    {
+                        c[i] = false;
                     }
                 }
+                return 0;
             }
             int nc2()
             {
-
+                //stesso procedimento
+            }
+            //stampa cartella
+            void gct1()
+            {
+                x = 0;
+                z = 12;
+                Console.SetCursorPosition(x, z);
+                Console.WriteLine("Prima cartella:");
+                for (int i = 0; i < 5; i++)
+                {
+                    z++;
+                    if (i% 2 == 1)
+                        {
+                        Console.SetCursorPosition(x,z);
+                        }
+                }
             }
         }
     }
